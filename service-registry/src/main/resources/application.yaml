@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: service-registry
+
+server:
+  port: 9092
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:9092/eureka/
+  server:
+    enable-self-preservation: false
+  instance:
+    hostname: localhost

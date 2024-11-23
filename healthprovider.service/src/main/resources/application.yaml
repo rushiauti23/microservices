@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: healthprovider-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/healthprovider-service
+    application:
+      name: healthprovider-service
+server:
+  port: 9091
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9092/eureka/
+
+
